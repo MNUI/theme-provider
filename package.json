@@ -1,14 +1,14 @@
 {
   "name": "react-native-theme-provider",
-  "version": "0.0.0",
-  "description": "A themeable abstraction over React Native StyleSheet.",
-  "main": "lib/index.js",
-  "repository": "https://github.com/brankeye/react-native-paint.git",
+  "version": "0.0.1",
+  "description": "React Native Theme a abstraction over StyleSheet.",
+  "main": "src/index.js",
+  "repository": "https://github.com/soroushm/react-native-theme-provider.git",
   "author": "Masoud Soroush",
   "license": "MIT",
   "private": false,
   "files": [
-    "lib/"
+    "src/"
   ],
   "keywords": [
     "StyleSheet",

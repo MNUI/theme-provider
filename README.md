@@ -255,5 +255,7 @@ export default withStyles(style)(ThemedText);
 |  state | react-native  | react-native-web  |   
 |---|---|---|
 | fork from react-native-paint  | ✅ | ❓ |  
-| provide theme as props  |   |   |   
+| provide theme as props  |  ✅ | ❓ |   
 | reWrite with type script |   |   |   
+| useStyle hook |   |   |
+| useTheme hook |   |   |
