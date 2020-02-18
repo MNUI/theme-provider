@@ -1,6 +1,7 @@
 import React from "react";
 
-const { Provider, Consumer } = React.createContext();
+const ThemeContext = React.createContext();
+const { Provider, Consumer } = ThemeContext
 
 export class ThemeProvider extends React.Component {
   static defaultProps = {
@@ -38,3 +39,7 @@ export const withTheme = WrappedComponent => props => (
     <Consumer>{({ id, theme }) => <WrappedComponent {...props} theme={theme} />}</Consumer>
 );
 
+export const useTheme = () => {
+  const { id, theme } = React.useContext(ThemeContext)
+  return theme
+}

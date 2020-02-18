@@ -21,7 +21,7 @@ npm install react-native-theme-provider
 
 Wrap your App with a theme provider.
 
-```jsx
+```jsx harmony
 import React from "react";
 import { ThemeProvider } from "react-native-theme-provider";
 
@@ -33,7 +33,7 @@ const defaultTheme = {
 const themes = {
   light: {
     ...defaultTheme,
-    name: "light"
+    name: "light",
     // some light theme properties
     palette: {
         default: 'rgba(100, 100, 100, .5)',
@@ -43,7 +43,7 @@ const themes = {
   },
   dark: {
     ...defaultTheme,
-    name: "dark"
+    name: "dark",
     // some dark theme properties
     palette: {
         default: 'rgba(200, 200, 200, .5)',
@@ -78,7 +78,7 @@ class App extends React.Component {
 ```
 #### Step 3
 
-```jsx
+```jsx harmony
 import React, { Component } from 'react'
 import { Text, TouchableOpacity, View } from 'react-native'
 import StyleSheet, { withStyles } from 'react-native-theme-provider'
@@ -130,11 +130,10 @@ export default withStyles(style)(App)
 
 ```
 ### with theme props
-```jsx
+```jsx harmony
 
 import React, { Component } from 'react'
-import { Text, TouchableOpacity, View } from 'react-native'
-import StyleSheet, { withStyles } from 'react-native-theme-provider'
+import  { withTheme } from 'react-native-theme-provider'
 import {
   NavigationContainer,
   DefaultTheme,
@@ -159,10 +158,32 @@ class App extends Component {
 }
 
 export default withTheme(App)
-
-
-
 ```
+
+### use theme hook
+```jsx harmony
+import React, { Component } from 'react'
+import {
+  NavigationContainer,
+  DefaultTheme,
+} from '@react-navigation/native';
+const App = function({ children }) {
+    const theme = useTheme()
+    const MyTheme = {
+      ...DefaultTheme,
+      colors: {
+        ...DefaultTheme.colors,
+        primary: theme.palette.primary,
+      },
+    };
+    return (
+      <NavigationContainer theme={MyTheme}>
+            {/* content */}
+      </NavigationContainer>
+    )
+}
+```
+
 ### with type script
 
 ```tsx harmony
@@ -203,7 +224,7 @@ export default withStyles(style)(App)
 
 ```
 
-#### customiz
+#### customize
 
 Use it in your components.
 
@@ -258,4 +279,4 @@ export default withStyles(style)(ThemedText);
 | provide theme as props  |  ✅ | ❓ |   
 | reWrite with type script |   |   |   
 | useStyle hook |   |   |
-| useTheme hook |   |   |
+| useTheme hook | ✅ | ❓ |
