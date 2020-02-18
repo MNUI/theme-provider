@@ -18,7 +18,7 @@ class ThemeFactory {
   getStyles = (id, theme) => {
     if (this.id !== id) {
       this.id = id;
-      this.styles = StyleSheet.create(this.parseStyles(theme));
+      this.styles = StyleSheetNative.create(this.parseStyles(theme));
     }
     return this.styles;
   };

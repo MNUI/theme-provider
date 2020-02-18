@@ -1,9 +1,12 @@
 {
-  "name": "react-native-theme-provider",
+  "name": "@material-native-ui/theme-provider",
   "version": "0.0.1",
   "description": "React Native Theme a abstraction over StyleSheet.",
   "main": "src/index.js",
-  "repository": "https://github.com/soroushm/react-native-theme-provider.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-native-ui/react-native-theme-provider.git"
+  },
   "author": "Masoud Soroush",
   "license": "MIT",
   "private": false,
@@ -17,5 +20,17 @@
     "Theme",
     "Themeable",
     "Styles"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/material-native-ui/react-native-theme-provider/issues"
+  },
+  "homepage": "https://github.com/material-native-ui/react-native-theme-provider#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "devDependencies": {},
+  "sideEffects": false
 }
