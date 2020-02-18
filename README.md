@@ -129,6 +129,40 @@ export default withStyles(style)(App)
 
 
 ```
+### with theme props
+```jsx
+
+import React, { Component } from 'react'
+import { Text, TouchableOpacity, View } from 'react-native'
+import StyleSheet, { withStyles } from 'react-native-theme-provider'
+import {
+  NavigationContainer,
+  DefaultTheme,
+} from '@react-navigation/native';
+
+class App extends Component {
+  render() {
+    const { styles, theme } = this.props
+    const MyTheme = {
+      ...DefaultTheme,
+      colors: {
+        ...DefaultTheme.colors,
+        primary: theme.palette.primary,
+      },
+    };
+    return (
+      <NavigationContainer theme={MyTheme}>
+            {/* content */}
+      </NavigationContainer>
+    )
+  }
+}
+
+export default withTheme(App)
+
+
+
+```
 ### with type script
 
 ```tsx harmony
