@@ -43,3 +43,8 @@ export const useTheme = () => {
   const { id, theme } = React.useContext(ThemeContext)
   return theme
 }
+
+export const useStyle = (style) => {
+  const { id, theme } = React.useContext(ThemeContext)
+  return style.getStyles(id, theme)
+}

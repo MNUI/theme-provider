@@ -126,10 +126,35 @@ const style = StyleSheet.create(
   })
 )
 export default withStyles(style)(App)
-
-
 ```
-### with theme props
+### useStyle hook
+```jsx harmony
+import React, { Component } from 'react'
+import StyleSheet, { useStyle } from 'react-native-theme-provider'
+
+const style = StyleSheet.create(
+  (theme) => ({
+    container: {
+      flexGrow: 1,
+      paddingTop: theme.spacing(4),
+      paddingBottom: theme.spacing(2),
+      paddingLeft: theme.spacing(2),
+      paddingRight: theme.spacing(2),
+    },   
+  })
+)
+const App = function({ children }) {
+    const style = useStyle(style)
+    
+    return (
+      <View style={styles.container}>
+            {/* content */}
+      </View>
+    )
+}
+```
+
+### withTheme props
 ```jsx harmony
 
 import React, { Component } from 'react'
@@ -160,7 +185,7 @@ class App extends Component {
 export default withTheme(App)
 ```
 
-### use theme hook
+### useTheme hook
 ```jsx harmony
 import React, { Component } from 'react'
 import {
