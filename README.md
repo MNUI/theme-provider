@@ -1,6 +1,7 @@
 # React Native Theme Provider
 
-A themeable abstraction over React Native [StyleSheet](https://facebook.github.io/react-native/docs/stylesheet.html).
+A theme abstraction over React Native [StyleSheet](https://facebook.github.io/react-native/docs/stylesheet.html).
+Thanks to @brankeye for great work this package forked from react-native-pain
 
 ## Usage
 
