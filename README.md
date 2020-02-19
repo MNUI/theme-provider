@@ -3,6 +3,9 @@
 A theme abstraction over React Native [StyleSheet](https://facebook.github.io/react-native/docs/stylesheet.html).
 Thanks to @brankeye for great work this package forked from react-native-pain
 
+
+Nested Theme Support
+
 ## Usage
 
 #### Step 1
@@ -127,6 +130,16 @@ const style = StyleSheet.create(
 )
 export default withStyles(style)(App)
 ```
+### Nested Theme
+```jsx harmony
+        <ThemeProvider theme={themes.green}>
+            <Button color={'primary'} text="Submit" />
+            <ThemeProvider theme={themes.blue}>
+              <Button color={'primary'} text="Submit" />
+            </ThemeProvider>
+        <ThemeProvider theme={themes.light}>
+```
+
 ### useStyle hook
 ```jsx harmony
 import React, { Component } from 'react'
@@ -302,6 +315,6 @@ export default withStyles(style)(ThemedText);
 |---|---|---|
 | fork from react-native-paint  | ✅ | ❓ |  
 | provide theme as props  |  ✅ | ❓ |   
-| reWrite with type script |   |   |   
-| useStyle hook |   |   |
+| useStyle hook  |  ✅ | ❓ |  
 | useTheme hook | ✅ | ❓ |
+| reWrite with type script |   |   |   
