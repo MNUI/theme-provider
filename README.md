@@ -72,7 +72,7 @@ class App extends React.Component {
   render() {
     const { currentTheme } = this.state;
     return (
-      <ThemeProvider id={currentTheme.name} theme={currentTheme}>
+      <ThemeProvider theme={currentTheme}>
         <App changeTheme={this.changeTheme} />
       </ThemeProvider>
     );
@@ -314,8 +314,8 @@ export default withStyles(style)(ThemedText);
 
 |  state | react-native  | react-native-web  |   
 |---|---|---|
-| fork from react-native-paint  | ✅ | ❓ |  
-| provide theme as props  |  ✅ | ❓ |   
-| useStyle hook  |  ✅ | ❓ |  
-| useTheme hook | ✅ | ❓ |
+| fork from react-native-paint  | ✅ | ✅ |  
+| provide theme as props  |  ✅ | ✅ |   
+| useStyle hook  |  ✅ | ✅ |  
+| useTheme hook | ✅ | ✅ |
 | reWrite with type script |   |   |   

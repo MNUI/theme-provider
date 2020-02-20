@@ -1,0 +1,10 @@
+{
+  "main": "src/App.jsx",
+  "private": true,
+  "dependencies": {
+    "@material-native-ui/theme-provider": "^0.0.3",
+    "expo": "^36.0.2",
+    "react": "^16.12.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-28.0.0.tar.gz"
+  }
+}

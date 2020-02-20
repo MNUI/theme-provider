@@ -2,7 +2,7 @@
   "name": "@material-native-ui/theme-provider",
   "version": "0.0.3",
   "description": "React Native Theme a abstraction over StyleSheet.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/material-native-ui/react-native-theme-provider.git"
@@ -11,13 +11,15 @@
   "license": "MIT",
   "private": false,
   "files": [
-    "src/"
+    "lib/"
   ],
   "keywords": [
     "StyleSheet",
     "React",
     "Native",
+    "react-native",
     "Theme",
+    "Paint",
     "Themeable",
     "Styles"
   ],
@@ -26,11 +28,23 @@
   },
   "homepage": "https://github.com/material-native-ui/react-native-theme-provider#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir lib"
   },
   "engines": {
     "node": ">=8.0.0"
   },
-  "devDependencies": {},
-  "sideEffects": false
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "eslint": "^6.8.0"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@material-native-ui/theme-provider": "^0.0.3",
+    "react": "^16.12.0"
+  }
 }
