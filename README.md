@@ -13,11 +13,11 @@ Nested Theme Support
 Install [`react-native-theme-provider`](https://www.npmjs.com/package/react-native-theme-provider) using [yarn](https://yarnpkg.com/lang/en/) or [npm](https://www.npmjs.com/get-npm).
 
 ```
-yarn add react-native-theme-provider
+yarn add @material-native-ui/theme-provider
 ```
 
 ```
-npm install react-native-theme-provider
+npm install @material-native-ui/theme-provider
 ```
 
 #### Step 2
@@ -26,7 +26,7 @@ Wrap your App with a theme provider.
 
 ```jsx harmony
 import React from "react";
-import { ThemeProvider } from "react-native-theme-provider";
+import { ThemeProvider } from "@material-native-ui/theme-provider";
 
 const defaultTheme = {
     spacing: (spacing) => 8 * spacing,
@@ -84,7 +84,7 @@ class App extends React.Component {
 ```jsx harmony
 import React, { Component } from 'react'
 import { Text, TouchableOpacity, View } from 'react-native'
-import StyleSheet, { withStyles } from 'react-native-theme-provider'
+import StyleSheet, { withStyles } from '@material-native-ui/theme-provider'
 
 class App extends Component {
   render() {
@@ -131,6 +131,7 @@ const style = StyleSheet.create(
 export default withStyles(style)(App)
 ```
 ### Nested Theme
+
 ```jsx harmony
         <ThemeProvider theme={themes.green}>
             <Button color={'primary'} text="Submit" />
@@ -143,7 +144,7 @@ export default withStyles(style)(App)
 ### useStyle hook
 ```jsx harmony
 import React, { Component } from 'react'
-import StyleSheet, { useStyle } from 'react-native-theme-provider'
+import StyleSheet, { useStyle } from '@material-native-ui/theme-provider'
 
 const style = StyleSheet.create(
   (theme) => ({
@@ -171,7 +172,7 @@ const App = function({ children }) {
 ```jsx harmony
 
 import React, { Component } from 'react'
-import  { withTheme } from 'react-native-theme-provider'
+import  { withTheme } from '@material-native-ui/theme-provider'
 import {
   NavigationContainer,
   DefaultTheme,
@@ -227,7 +228,7 @@ const App = function({ children }) {
 ```tsx harmony
 import React, { Component } from 'react'
 import { Text, TextStyle, TouchableOpacity, View, ViewStyle } from 'react-native'
-import StyleSheet, { withStyles } from 'react-native-theme-provider'
+import StyleSheet, { withStyles } from '@material-native-ui/theme-provider'
 
 interface InterfaceStyles {
   container: ViewStyle
@@ -267,7 +268,7 @@ export default withStyles(style)(App)
 Use it in your components.
 
 ```jsx
-import Theme, { StylesConsumer, withStyles } from "react-native-theme-provider";
+import Theme, { StylesConsumer, withStyles } from "@material-native-ui/theme-provider";
 
 // with theme
 const style = Theme.create((theme) => ({
