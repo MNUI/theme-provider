@@ -1,4 +1,7 @@
 # Changelog
+## 0.0.4
+- Support Web
+- add sample 
 
 ## 0.0.3
 - Can use `theme` in hook provide by  `useTheme` 

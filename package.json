@@ -1,6 +1,6 @@
 {
   "name": "@material-native-ui/theme-provider",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React Native Theme a abstraction over StyleSheet.",
   "main": "lib/index.js",
   "repository": {
@@ -21,7 +21,9 @@
     "Theme",
     "Paint",
     "Themeable",
-    "Styles"
+    "Styles",
+    "react-theme-provider",
+    "react-native-theme-provider"
   ],
   "bugs": {
     "url": "https://github.com/material-native-ui/react-native-theme-provider/issues"
@@ -44,7 +46,6 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "@material-native-ui/theme-provider": "^0.0.3",
     "react": "^16.12.0"
   }
 }
