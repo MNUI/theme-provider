@@ -208,7 +208,7 @@ import {
 } from '@react-navigation/native';
 const App = function({ children }) {
     const theme = useTheme()
-    const MyTheme = {
+    const MyTheme = { //send theme to react navigation theme
       ...DefaultTheme,
       colors: {
         ...DefaultTheme.colors,
@@ -216,7 +216,8 @@ const App = function({ children }) {
       },
     };
     return (
-      <NavigationContainer theme={MyTheme}>
+      
+      <NavigationContainer theme={MyTheme}> 
             {/* content */}
       </NavigationContainer>
     )
@@ -319,3 +320,8 @@ export default withStyles(style)(ThemedText);
 | useStyle hook  |  ✅ | ✅ |  
 | useTheme hook | ✅ | ✅ |
 | reWrite with type script |   |   |   
+
+
+# Example
+- [native project](https://github.com/material-native-ui/theme-provider/tree/master/samples/native-app) 
+- [web project](https://github.com/material-native-ui/theme-provider/tree/master/samples/web-app)

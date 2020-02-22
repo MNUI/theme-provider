@@ -1,11 +1,11 @@
 {
   "name": "@material-native-ui/theme-provider",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "React Native Theme a abstraction over StyleSheet.",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/material-native-ui/react-native-theme-provider.git"
+    "url": "git+https://github.com/material-native-ui/theme-provider.git"
   },
   "author": "Masoud Soroush",
   "license": "MIT",
@@ -26,9 +26,9 @@
     "react-native-theme-provider"
   ],
   "bugs": {
-    "url": "https://github.com/material-native-ui/react-native-theme-provider/issues"
+    "url": "https://github.com/material-native-ui/theme-provider/issues"
   },
-  "homepage": "https://github.com/material-native-ui/react-native-theme-provider#readme",
+  "homepage": "https://github.com/material-native-ui/theme-provider#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src --out-dir lib"
