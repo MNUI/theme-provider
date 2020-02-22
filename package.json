@@ -31,7 +31,8 @@
   "homepage": "https://github.com/material-native-ui/theme-provider#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src --out-dir lib"
+    "build": "babel src --out-dir lib",
+    "publish": "yarn build &&  npm publish --scope @material-native-ui"
   },
   "engines": {
     "node": ">=8.0.0"
