@@ -1,7 +1,7 @@
 # React Native Theme Provider
 
-A theme abstraction over React Native [StyleSheet](https://facebook.github.io/react-native/docs/stylesheet.html).
-Thanks to @brankeye for great work this package forked from react-native-paint
+A theme abstraction over React Native [StyleSheet](https://reactnative.dev/docs/stylesheet.html).
+
 
 
 Nested Theme Support
@@ -10,14 +10,20 @@ Nested Theme Support
 
 #### Step 1
 
-Install [`react-native-theme-provider`](https://www.npmjs.com/package/react-native-theme-provider) using [yarn](https://yarnpkg.com/lang/en/) or [npm](https://www.npmjs.com/get-npm).
+Install [`react-native-theme-provider`](https://www.npmjs.com/package/@material-native-ui/theme-provider) using:
 
-```
-yarn add @material-native-ui/theme-provider
-```
-
+[npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 ```
 npm install @material-native-ui/theme-provider
+```
+[pnpm](https://pnpm.io/installation)
+```
+pnpm install @material-native-ui/theme-provider
+```
+
+[yarn](https://classic.yarnpkg.com/lang/en/docs/install) 
+```
+yarn add @material-native-ui/theme-provider
 ```
 
 #### Step 2
@@ -320,6 +326,9 @@ export default withStyles(style)(ThemedText);
 | useStyle hook  |  ✅ | ✅ |  
 | useTheme hook | ✅ | ✅ |
 | reWrite with type script |   |   |   
+
+
+Big thanks to @brankeye and @soroushm for the great work!
 
 
 # Example
