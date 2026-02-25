@@ -1,3 +1,6 @@
+[![Socket Badge](https://badge.socket.dev/npm/package/@material-native-ui/theme-provider/0.0.5)](https://badge.socket.dev/npm/package/@material-native-ui/theme-provider/0.0.5)
+
+
 # React Native Theme Provider
 
 A theme abstraction over React Native [StyleSheet](https://reactnative.dev/docs/stylesheet.html).
