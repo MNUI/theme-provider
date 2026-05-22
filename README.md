@@ -1,4 +1,5 @@
-[![Socket Badge](https://badge.socket.dev/npm/package/@material-native-ui/theme-provider/0.0.5)](https://badge.socket.dev/npm/package/@material-native-ui/theme-provider/0.0.5)
+[![Socket Badge](https://badge.socket.dev/npm/package/@material-native-ui/theme-provider)](https://socket.dev/npm/package/@material-native-ui/theme-provider)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@material-native-ui/theme-provider)](https://bundlephobia.com/package/@material-native-ui/theme-provider)
 
 
 # React Native Theme Provider
