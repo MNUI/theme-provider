@@ -79,7 +79,7 @@ function registerValidSW(swUrl, config) {
                 config.onUpdate(registration);
               }
             } else {
-              // At this point, everything has been precached.
+              // At this point, everything has been precached.how
               // It's the perfect time to display a
               // "Content is cached for offline use." message.
               console.log('Content is cached for offline use.');
