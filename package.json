@@ -1,6 +1,6 @@
 {
   "name": "@material-native-ui/theme-provider",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "React Native Theme a abstraction over StyleSheet.",
   "main": "lib/index.js",
   "repository": {
