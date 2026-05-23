@@ -14,7 +14,7 @@ Nested Theme Support
 
 #### Step 1
 
-Install [`react-native-theme-provider`](https://www.npmjs.com/package/@material-native-ui/theme-provider) using:
+Install [`Theme Provider`](https://www.npmjs.com/package/@material-native-ui/theme-provider) using:
 
 [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 ```
